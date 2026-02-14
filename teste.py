@@ -106,26 +106,30 @@ def start_api():
         pyautogui.write('Pascal')
 
         pyautogui.press('tab') 
+        pyautogui.press('tab')
+        pyautogui.press('tab') 
+        pyautogui.press('tab') 
+        pyautogui.press('enter') 
 
-        pyautogui.moveTo(494, 752)
+        time.sleep(10)
 
-        time.sleep(5)
+        pyautogui.click(368, 744)
+        time.sleep(1)
+        pyautogui.click(368, 744)
+        pyautogui.press('enter')
+        time.sleep(10)
+        pyautogui.click(495, 752)
 
-        # Pressiona o botão esquerdo do mouse
-        pyautogui.mouseDown(button='left')
 
-        # Aguarda o período de tempo desejado
-        time.sleep(13)  # O mouse ficará pressionado por 2 segundos
+        
 
-        # Libera o botão esquerdo do mouse
-        pyautogui.mouseUp(button='left') 
-
-        #messagebox.showinfo("Informação", "Processo iniciado com sucesso! Agora você pode desligar a API.")
+       
+      
     except Exception as e:
         messagebox.showerror("Erro", f"Ocorreu um erro: {e}")
 
 
-        pyautogui.moveTo(878, 173, duration=10) # Move o mouse para uma posição fixa (exemplo)
+        pyautogui.moveTo(878, 173, duration=10) 
         pyautogui.click()
 
 
